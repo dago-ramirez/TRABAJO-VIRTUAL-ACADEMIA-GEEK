@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", event => {
             modalDogMessage.innerHTML = `Su perro tiene ${realDogAge} años`;
             inputDogAge.value = '';
         } else {
-            realDogAge = parseFloat(inputDogAge.value) * 15;
+            realDogAge = ((parseFloat(inputDogAge.value) - 2) * 5) + 24;
             modalDogTlttle.innerHTML = 'Message';
             modalDogMessage.innerHTML = `Su perro tiene ${realDogAge} años`;
             inputDogAge.value = '';
