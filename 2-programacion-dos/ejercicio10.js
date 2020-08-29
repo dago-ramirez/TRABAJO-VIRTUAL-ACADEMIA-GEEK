@@ -1,4 +1,11 @@
-console.log("Ejercicio 10 unidad 2:");
-edad = document.querySelector('.edad').innerHTML;
-horasVividas = parseInt(edad) * convertMiliSegEnHoras;
-console.log('He vivido:', horasVividas, '\n\n');
+let inputEdad = document.querySelector('.input-edad');
+document.querySelector('.boton-enviar').addEventListener('click', event => {
+    if (isNaN(inputEdad.value) || inputEdad.value === '') {
+        inputEdad.value = '';
+        alert('Debe ingresar un número')
+    } else {
+        horasVividas = parseInt(inputEdad.value) * convertMiliSegEnHoras;
+        inputEdad.value = '';
+        alert(`Usted ha vidido ${horasVividas} horas`);
+    }
+});
