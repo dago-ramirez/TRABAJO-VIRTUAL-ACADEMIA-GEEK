@@ -2,7 +2,7 @@ function multiplicar(a, b) {
     if (isNaN(a) || isNaN(b) || a === '' || b === '') {
         alert('Datos inválidos');
     } else {
-        let result = a * b;
+        let result = Number(a * b).toFixed(2);
         alert(`El resultado es: ${result}`);        
     }
 }

@@ -2,7 +2,7 @@ function calcularMedia(a, b, c, d) {
     if (isNaN(a) || isNaN(b) || isNaN(c) || isNaN(d) || a === '' || b === '' || c === '' || d === '') {
         alert('Datos inválidos');
     } else {
-        let promedio = (a + b + c + d) / 4;
+        let promedio = Number((a + b + c + d) / 4).toFixed(2);
         alert(`El promedio es: ${promedio}`);        
     }
 }

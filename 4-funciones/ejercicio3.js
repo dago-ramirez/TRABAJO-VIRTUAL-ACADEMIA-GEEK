@@ -2,7 +2,7 @@ function facturar(a) {
     if (isNaN(a) || a === '') {
         alert('Datos inválidos');
     } else {
-        let iva = a * 0.21;
+        let iva = Number(a * 0.21).toFixed(2);
         alert(`El precio sin IVA es: $${a}, IVA: $${iva}, Total: $${a + iva}`);        
     }
 }
