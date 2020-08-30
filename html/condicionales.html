@@ -27,19 +27,19 @@
     <h3>Nombre: Fill Murray</h3>
     <div><img src="" alt="" class="avatar"></div>
     <h2>Ejercicio 2</h2>
-    <div class="input-group">
+    <div class="input-group d-flex flex-column flex-lg-row align-content-center">
       <div class="input-group-prepend">
-        <span class="input-group-text">ingrese su nombre</span>
+        <span class="input-group-text" style="min-width: 300px">ingrese el nombre de usuario</span>
       </div>
-      <input type="text" aria-label="First name" class="form-control input-name" required>
+      <input type="text" aria-label="First name" class="form-control input-name" style="min-width: 300px" required>
       <button type="button" class="btn btn-success send-button1">Enviar</button>
     </div>
     <h2>Ejercicio 3</h2>
-    <div class="input-group">
+    <div class="input-group d-flex flex-column flex-lg-row align-content-center">
       <div class="input-group-prepend">
-        <span class="input-group-text">ingrese un número</span>
+        <span class="input-group-text" style="min-width: 300px">ingrese un número</span>
       </div>
-      <input type="text" aria-label="First name" class="form-control input-number" required>
+      <input type="text" aria-label="First name" class="form-control input-number" style="min-width: 300px" required>
       <button type="button" class="btn btn-success send-button2" data-toggle="modal" data-target="#myModal">Enviar</button>
     </div>    
     <div class="modal" tabindex="-1" id="myModal">
@@ -61,11 +61,11 @@
       </div>
     </div>
     <h2>Ejercicio 4</h2>
-    <div class="input-group">
+    <div class="input-group d-flex flex-column flex-lg-row align-content-center">
       <div class="input-group-prepend">
-        <span class="input-group-text">ingrese la edad de su perro (valor numérico en años)</span>
+        <span class="input-group-text" style="min-width: 300px">ingrese la edad de su perro en años</span>
       </div>
-      <input type="text" aria-label="First name" class="form-control input-dog-age" required>
+      <input type="text" aria-label="First name" class="form-control input-dog-age" style="min-width: 300px" placeholder="Ej. 7" required>
       <button type="button" class="btn btn-success send-button3" data-toggle="modal" data-target="#myModal2">Enviar</button>
     </div>    
     <div class="modal" tabindex="-1" id="myModal2">
@@ -85,7 +85,14 @@
           </div>
         </div>
       </div>
-    </div>  
+    </div>
+    <h2>Ejercicio 5</h2>
+    <!-- Cambia la clase alert-success por alert-warnign o alert-danger o quítala y mira el resultado -->
+    <div class="alert alert-success" role="alert">
+      <h4 class="alert-heading">NOTIFICACIÓN</h4>
+      <p class="alert-message">Mensaje por defecto</p>
+      <hr>
+    </div>
     <div class="d-flex justify-content-center">
       <a href="../index.html" class="btn btn-success btn-lg my-4" tabindex="-1" role="button"
         aria-disabled="true">REGRESAR</a>
@@ -103,12 +110,7 @@
   <script defer type="text/javascript" src="../3-condicionales/ejercicio2.js"></script>
   <script type="text/javascript" src="../3-condicionales/ejercicio3.js"></script>
   <script type="text/javascript" src="../3-condicionales/ejercicio4.js"></script>
-  <!--  <script type="text/javascript" src="../3-condicionales/ejercicio5.js"></script>
-  <script type="text/javascript" src="../3-condicionales/ejercicio6.js"></script>
-  <script type="text/javascript" src="../3-condicionales/ejercicio7.js"></script>
-  <script type="text/javascript" src="../3-condicionales/ejercicio8.js"></script>
-  <script type="text/javascript" src="../3-condicionales/ejercicio9.js"></script>
-  <script type="text/javascript" src="../3-condicionales/ejercicio10.js"></script> -->
+  <script type="text/javascript" src="../3-condicionales/ejercicio5.js"></script>
   <!-- Fontawesome key -->
   <script src="https://kit.fontawesome.com/aa7e44f5a7.js" crossorigin="anonymous"></script>
   <!-- Etiquetas de Bootstrap -->
