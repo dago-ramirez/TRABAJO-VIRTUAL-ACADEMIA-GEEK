@@ -9,14 +9,14 @@ const thirdDogImage = 'https://images.dog.ceo/breeds/chihuahua/n02085620_3409.jp
 const thirdDogName = 'Lana';
 
 lista.innerHTML = ` <li>
-                      <img src="${firstDogImage}" alt="">
+                      <img src="${firstDogImage}" class="img-fluid" alt="Responsive image">
                       <h3>${firstDogName}</h3>
                     </li>
                     <li>
-                      <img src="${secondDogImage}" alt="">
+                      <img src="${secondDogImage}" class="img-fluid" alt="Responsive image">
                       <h3>${secondDogName}</h3>
                     </li>
                     <li>
-                      <img src="${thirdDogImage}" alt="">
+                      <img src="${thirdDogImage}" class="img-fluid" alt="Responsive image">
                       <h3>${thirdDogName}</h3>
                     </li>`
